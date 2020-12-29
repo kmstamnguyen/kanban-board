@@ -1,0 +1,23 @@
+<h2>Board Management</h2>
+
+<div class="action-container">
+  <label>Board Name:
+    <input #name />
+    <span *ngIf="error">{{error}}</span>
+  </label>
+  <br><br>
+  
+  <button (click)="add(name.value); name.value=''">
+    Add board
+  </button>
+</div>
+
+<ul class="list">
+  <li *ngFor="let board of boards" class="list-item">
+    <a class="list-item-content" routerLink="/board/detail/{{board._id}}">
+      <span  >{{board.name}}</span> 
+    </a>
+    <!-- <button class="delete" title="delete board"
+      (click)="delete(board)">x</button> -->
+  </li>
+</ul>

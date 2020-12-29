@@ -1,0 +1,32 @@
+
+<h2>{{headerTitle | uppercase}}</h2>
+<div class="action-container">
+  <label>Board Name: {{board.name}}
+  </label>
+  <br><br>
+  <label>Title:
+    <input [(ngModel)]="task.title" placeholder="Title"/>
+  </label>
+  <br><br>
+
+  <label for="ngvalueselect">Status</label>
+  <select [(ngModel)]="task.status">
+    <option *ngFor="let status of statuses" >{{ status }}</option>
+    </select>
+  <br><br>
+
+  <label *ngIf="task._id" for="ngvalueselect">Assign user </label>
+  <select *ngIf="task._id" [(ngModel)]="joined">
+    <option *ngFor="let user of users" [value]="user._id">{{ user.firstname }} {{user.lastname}}</option>
+    </select>
+
+  <!-- <label>Board:
+    {{task.joined[0]._id}}
+  </label> -->
+  <br><br>
+
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(task._id)">Save</button>
+
+  
+ 

@@ -1,0 +1,26 @@
+<h2>User Management</h2>
+
+<div class="action-container">
+  <label>First name:
+    <input #firstname />
+  </label>
+  <br><br>
+  <label>Last name:
+    <input #lastname />
+  </label>
+  <br><br>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(firstname.value, lastname.value); firstname.value=''; lastname.value=''">
+    Add user
+  </button>
+</div>
+
+<ul class="list">
+  <li *ngFor="let user of users" class="list-item">
+   
+      <span class="badge"></span> {{user.firstname}} - {{user.lastname}}
+   
+    <!-- <button class="delete" title="delete user"
+      (click)="delete(user)">x</button> -->
+  </li>
+</ul>

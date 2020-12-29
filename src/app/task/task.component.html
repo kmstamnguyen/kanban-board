@@ -1,0 +1,68 @@
+
+<!-- 
+<div>
+  <label>Title:
+    <input #title />
+  </label>
+  <br><br>
+  <label for="ngvalueselect">Status</label>
+  <select #status>
+    <option *ngFor="let s of statuses" [value]="s">{{ s }}</option>
+    </select>
+  <br><br>
+
+
+  
+  <button (click)="add(title.value, status.value); title.value=''; status.value=''">
+    Add task
+  </button>
+  <br><br>
+</div> -->
+
+<!-- 
+<ul class="heroes">
+  <li *ngFor="let task of tasks">
+    <a routerLink="/task/detail/{{task._id}}">
+      <span class="badge"></span> {{task.title}}
+    </a>
+    <button class="delete" title="delete task"
+      (click)="delete(task)">x</button>
+  </li>
+</ul> -->
+
+<div class="board ">
+  <div class="board-header">
+      <label class="board-name">{{board?.name}}</label>
+
+     
+        <button style="float:right; margin-right:10px" routerLink="/task/add/{{boardId}}">New Task</button> 
+    
+  </div>
+  
+  <div class="board-wrapper">
+    
+      <div class="board-columns" cdkDropListGroup>
+
+          <div class="board-column" *ngFor="let column of columns">
+                  <div class="columns column-title">
+                          <div class="column is-10">{{column.name}}</div>
+                          <!-- <div class="column is-2">{{column.tasks.length}}</div> -->
+                  </div>
+                  <div class="tasks-container"
+                  cdkDropList
+                  [cdkDropListData]="column.tasks"
+                  (cdkDropListDropped)="drop($event, column.name)">
+                      <app-card cdkDrag
+                          *ngFor="let task of column.tasks"
+                          [taskModel]="task"
+                      ></app-card>
+
+                      <!-- <div class="task" *ngFor="let item of column.tasks" cdkDrag>
+                        {{ item }}
+                      </div> -->
+
+                  </div>
+              </div>
+      </div>
+  </div>
+</div>

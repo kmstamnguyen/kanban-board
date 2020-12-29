@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    color: #555;
+    background-color: #a8d5e4;
+    font-family: sans-serif;
+  }
+h2 {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+  button {
+      background-color: #106e8e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid gray;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+        padding: 8px;
+        margin-left: 20px;
+
+  }
+  button:hover{
+      background-color: white;
+      color: gray;
+      
+  }
+  .action-container{
+      border: 1px solid gray;
+      padding: 15px;
+      width: 460px;
+      margin-left: 40px;
+      border-radius: 8px;
+  }
+  label {
+      font-size: 16px;
+      font-weight: 400;
+      /* margin-left: 40px; */
+  }
+  .action-container button{
+      float: right;
+  }
+  input {
+    height: 25px;
+    width: 345px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px;
+    margin-left: 10px;
+    background-color: #fafafacc;
+  }
+  select {
+    height: 30px;
+    width: 345px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px;
+    margin-left: 10px;
+    background-color: #fafafacc;
+  }
+  .list {
+    border-radius: 2px;
+    list-style: none;
+    padding: 10px 20px;
+    
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    border: 1px solid #4f94da;
+    width: 500px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .list-item-content{
+    margin-left: 20px;
+    
+  }
+ 
+  .list-item-content {
+    margin-top: 5px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.board {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
