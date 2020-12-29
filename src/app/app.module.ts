@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsersComponent } from './users/users.component';
-import { TaskComponent } from './task/task.component';
-import { BoardComponent } from './board/board.component';
-import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { UsersComponent } from './components/users/users.component';
+import { TaskComponent } from './components/task/task.component';
+import { BoardComponent } from './components/board/board.component';
+import { TaskDetailComponent } from './components/task-detail/task-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CardComponent } from './card/card.component';
+import { CardComponent } from './components/card/card.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 @NgModule({
   declarations: [

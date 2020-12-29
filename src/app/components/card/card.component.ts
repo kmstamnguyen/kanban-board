@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Task, DetailTask } from '../interface/task';
+import { Task, DetailTask } from '../../interface/task';
 
 @Component({
   selector: 'app-card',

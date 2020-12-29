@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { User } from '../interface/user';
-import { UserService } from '../services/user.service';
+import { User } from '../../interface/user';
+import { UserService } from '../../services/user.service';
 
 
 @Component({

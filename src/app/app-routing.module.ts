@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-import { BoardComponent } from './board/board.component';
-import { TaskComponent } from './task/task.component';
-import { UsersComponent } from './users/users.component';
+import { BoardComponent } from './components/board/board.component';
+import { TaskComponent } from './components/task/task.component';
+import { UsersComponent } from './components/users/users.component';
 
-import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { TaskDetailComponent } from './components/task-detail/task-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/board', pathMatch: 'full' },

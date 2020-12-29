@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Board } from '../interface/board';
-import { Task, DetailTask } from '../interface/task';
-import { BoardService } from '../services/board.service';
-import { TaskService } from '../services/task.service';
+import { Board } from '../../interface/board';
+import { Task, DetailTask } from '../../interface/task';
+import { BoardService } from '../../services/board.service';
+import { TaskService } from '../../services/task.service';
 
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 

@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Board } from '../board';
-import { Task } from '../task';
-import { BoardService } from '../board.service';
-import { TaskService } from '../task.service';
+import { Board } from '../../interface/board';
+import { Task } from '../../interface/task';
+import { BoardService } from '../../services/board.service';
+import { TaskService } from '../../services/task.service';
 @Component({
   selector: 'app-board-detail',
   templateUrl: './board-detail.component.html',

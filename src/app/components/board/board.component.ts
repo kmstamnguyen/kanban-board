@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Board } from '../interface/board';
+import { Board } from '../../interface/board';
 
-import { BoardService } from '../services/board.service';
+import { BoardService } from '../../services/board.service';
 
 @Component({
   selector: 'app-board',
